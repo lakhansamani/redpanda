@@ -5,3 +5,6 @@ body {
 .error {
   color: red;
 }
+.page-section {
+  height: 90vh;
+}
