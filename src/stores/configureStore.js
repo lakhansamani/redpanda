@@ -7,7 +7,11 @@ import rootReducer from './../reducers';
 
 const logger = createLogger();
 const router = routerMiddleware(browserHistory);
-const createStoreWithMiddleware = applyMiddleware(router, logger)(createStore);
+const middlewares = [router];
+if (process.env.NODE_ENV === 'development') {
+  middlewares.push(logger);
+}
+const createStoreWithMiddleware = applyMiddleware(...middlewares)(createStore);
 
 const configureStore = initialState => createStoreWithMiddleware(rootReducer, initialState);
 
