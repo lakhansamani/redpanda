@@ -1,5 +1,5 @@
 import React from 'react'; // eslint-disable-line
-import { Link } from 'react-router';
+import { Link } from 'react-router'; // eslint-disable-line
 import homeBg from '../../../imgs/home-bg.jpg'; // eslint-disable-line
 import Logout from '../../partials/Logout'; // eslint-disable-line
 const Home = () => (
@@ -13,7 +13,7 @@ const Home = () => (
         more user friendly and to get more leads.
       </p>
       <br/>
-      <Link to="/aboutus/" className="about-link app-btn">Know more about us</Link>
+      <Link to="/aboutus/profile" className="about-link app-btn">Know more about us</Link>
     </div>
   </div>
 );
