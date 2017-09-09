@@ -6,7 +6,7 @@ const Team = () => (
     <div className="header white-text">
       Our Team
     </div>
-    <div className="content white-text">
+    <div className="s-content white-text">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Non igitur potestis voluptate omnia dirigentes aut tueri aut retinere virtutem.

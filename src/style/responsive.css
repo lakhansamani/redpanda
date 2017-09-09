@@ -3,16 +3,37 @@
     .login-form-wrapper {
       width: 80%;
     }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
+    }
   }
 
   /* Smartphones (landscape) ----------- */
   @media only screen and (min-width : 321px) {
+    .login-form-wrapper {
+      width: 80%;
+    }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
+    }
   }
 
   /* Smartphones (portrait) ----------- */
   @media only screen and (max-width : 320px) {
     .login-form-wrapper {
       width: 80%;
+    }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
     }
   }
 
@@ -47,17 +68,22 @@
 
   /* Desktops and laptops ----------- */
   @media only screen  and (min-width : 1224px) {
-    .login-form-wrapper {
-      width: 60%;
+    .menu {
+      display: block;
+    }
+    .mobile-menu {
+      display: none;
     }
   }
 
   /* Large screens ----------- */
   @media only screen  and (min-width : 1824px) {
-    .login-form-wrapper {
-      width: 60%;
+    .menu {
+      display: block;
     }
-
+    .mobile-menu {
+      display: none;
+    }
   }
 
   /* iPhone 4 ----------- */
@@ -65,12 +91,23 @@
     .login-form-wrapper {
       width: 80%;
     }
-
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
+    }
   }
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
     .login-form-wrapper {
       width: 80%;
+    }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
     }
   }
 
@@ -79,11 +116,23 @@
     .login-form-wrapper {
       width: 80%;
     }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
+    }
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
     .login-form-wrapper {
       width: 80%;
+    }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
     }
   }
 
@@ -92,11 +141,23 @@
     .login-form-wrapper {
       width: 80%;
     }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
+    }
   }
 
   @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
     .login-form-wrapper {
       width: 80%;
+    }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
     }
   }
 
@@ -105,11 +166,23 @@
     .login-form-wrapper {
       width: 80%;
     }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
+    }
   }
 
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
     .login-form-wrapper {
       width: 80%;
+    }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
     }
   }
 
@@ -118,11 +191,23 @@
     .login-form-wrapper {
       width: 80%;
     }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
+    }
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
     .login-form-wrapper {
       width: 80%;
+    }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
     }
   }
 
@@ -131,11 +216,23 @@
     .login-form-wrapper {
       width: 80%;
     }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
+    }
   }
 
   @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
     .login-form-wrapper {
       width: 80%;
+    }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
     }
   }
 
@@ -144,10 +241,22 @@
     .login-form-wrapper {
       width: 80%;
     }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
+    }
   }
 
   @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
     .login-form-wrapper {
       width: 80%;
+    }
+    .menu {
+      display: none;
+    }
+    .mobile-menu {
+      display: block;
     }
   }
