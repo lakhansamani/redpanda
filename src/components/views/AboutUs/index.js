@@ -12,8 +12,6 @@ class AboutUs extends React.Component {
   componentDidMount() {
     const path = this.props.location.pathname.split('/');
     const element = document.getElementById(path['2']);
-    console.log(this.props);
-    console.log(element);
     scrollTo(document.body, element.offsetTop - 80, 500);
     window.addEventListener('scroll', this.handleScroll);
   }
@@ -25,24 +23,42 @@ class AboutUs extends React.Component {
     const teamDiv = document.getElementById('team');
     const profileDiv = document.getElementById('profile');
     const contactDiv = document.getElementById('contactus');
-    if (topScroll < profileDiv.scrollHeight) {
+    if (topScroll < profileDiv.scrollHeight - 300) {
       browserHistory.push('/aboutus/profile');
     }
-    if (topScroll > teamDiv.offsetTop - 80 && topScroll < contactDiv.offsetTop - 300) {
+    if (topScroll > teamDiv.offsetTop - 100 && topScroll < contactDiv.offsetTop - 300) {
       browserHistory.push('/aboutus/team');
     }
-    console.log(topScroll, contactDiv.offsetTop);
+    console.log(topScroll, profileDiv.scrollHeight, teamDiv.offsetTop );
     if (topScroll > (contactDiv.offsetTop - 200)) {
       browserHistory.push('/aboutus/contactus');
     }
   }
+  changeSection(id) {
+    const element = document.getElementById(id);
+    scrollTo(document.body, element.offsetTop - 80, 500);
+  }
   render() {
     return (
       <div ref="aboutUs">
-        <h1> AboutUs </h1>
-        <Profile />
-        <Team />
-        <ContactUs />
+        <div className="nav">
+          <ul className="menu">
+            <li>
+              <a onClick={this.changeSection.bind(this, 'profile')}> Profile </a>
+            </li>
+            <li>
+              <a onClick={this.changeSection.bind(this, 'team')}> Team </a>
+            </li>
+            <li>
+              <a onClick={this.changeSection.bind(this, 'contactus')}> Contact us </a>
+            </li>
+          </ul>
+        </div>
+        <div className="about-container">
+          <Profile />
+          <Team />
+          <ContactUs />
+        </div>
       </div>
     );
   }
