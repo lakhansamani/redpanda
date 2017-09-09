@@ -2,6 +2,7 @@ import React, { Component } from 'react'; //eslint-disable-line
 import { browserHistory } from 'react-router';
 import emailValidation from '../../../lib/emailValidation';
 import { isLoggedIn } from '../../../lib/authLib';
+import login from '../../../imgs/login-bg.jpg'; //eslint-disable-line
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -57,21 +58,29 @@ class Login extends Component {
   }
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleAuthentication}>
-          <div>
-            <input type="text" placeholder="Email" onChange={this.handleEmailChange} />
-            <div className="error">{this.state.emailError}</div>
+      <div className="login-wrapper">
+        <div className="login-form-wrapper">
+          <div className="login-header">
+            Login
+            <p>
+              Sign in and get access !
+            </p>
           </div>
-          <div>
-            <input type="password" placeholder="password" onChange={this.handlePasswordChange} />
-            <div className="error">{this.state.passwordError}</div>
-          </div>
-          <div className="error">
-            {this.props.authError}
-          </div>
-          <button type="submit">Login</button>
-        </form>
+          <form onSubmit={this.handleAuthentication}>
+            <div>
+              <input type="text" placeholder="Email" onChange={this.handleEmailChange} />
+              <div className="error">{this.state.emailError}</div>
+            </div>
+            <div>
+              <input type="password" placeholder="Password" onChange={this.handlePasswordChange} />
+              <div className="error">{this.state.passwordError}</div>
+            </div>
+            <div className="error">
+              {this.props.authError}
+            </div>
+            <button type="submit">Login</button>
+          </form>
+        </div>
       </div>
     );
   }
