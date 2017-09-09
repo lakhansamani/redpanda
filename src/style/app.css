@@ -1,7 +1,36 @@
 body {
   font-family: 'Roboto', sans-serif !important;
   font-size: 12px;
+  margin: 0px;
 }
 .error {
   color: red;
+}
+.page-section {
+  height: 90vh;
+}
+.nav {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  background: #000;
+  width: 100%;
+}
+.menu {
+  position: relative;
+  top: 30%;
+	transform: translateY(-50%);
+  float: right;
+  margin-right: 10px;
+}
+.menu li {
+  display: inline;
+  padding: 0px 10px;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+.about-container {
+  margin-top: 70px;
 }
