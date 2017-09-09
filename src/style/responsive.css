@@ -68,6 +68,9 @@
 
   /* Desktops and laptops ----------- */
   @media only screen  and (min-width : 1224px) {
+    .login-form-wrapper {
+      width: 30%;
+    }
     .menu {
       display: block;
     }
@@ -78,6 +81,9 @@
 
   /* Large screens ----------- */
   @media only screen  and (min-width : 1824px) {
+    .login-form-wrapper {
+      width: 30%;
+    }
     .menu {
       display: block;
     }
