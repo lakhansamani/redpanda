@@ -6,7 +6,7 @@ const Profile = () => (
       <div className="header">
         About our Profile
       </div>
-      <div className="content grey-text">
+      <div className="s-content grey-text">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Non igitur potestis voluptate omnia dirigentes aut tueri aut retinere virtutem.

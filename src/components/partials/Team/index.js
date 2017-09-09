@@ -1,12 +1,12 @@
 import React from 'react'; // eslint-disable-line
-
+import team from '../../../imgs/team.jpg'; //eslint-disable-line
 const Team = () => (
   <section className="page-section" id="team">
   <div className="section-container">
     <div className="header white-text">
       Our Team
     </div>
-    <div className="content white-text">
+    <div className="s-content white-text">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Non igitur potestis voluptate omnia dirigentes aut tueri aut retinere virtutem.

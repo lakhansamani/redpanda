@@ -12,6 +12,7 @@ import NotFound from './components/views/NotFound';
 import configureStore from './stores/configureStore';
 import { requireAuth } from './lib/authLib';
 import './style/app.css';
+import './style/responsive.css';
 
 const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
