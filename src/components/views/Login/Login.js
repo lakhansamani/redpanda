@@ -21,18 +21,21 @@ class Login extends Component {
       browserHistory.push('/home');
     }
   }
+  // function to change state value based on change of input value
   handleEmailChange(e) {
     this.setState({
       email: e.target.value,
       emailError: ''
     });
   }
+  // function to change state value based on change of input value
   handlePasswordChange(e) {
     this.setState({
       password: e.target.value,
       passwordError: ''
     });
   }
+  // function used for validating and submitting form
   handleAuthentication(e) {
     e.preventDefault();
     const authData = {
@@ -78,7 +81,9 @@ class Login extends Component {
             <div className="error">
               {this.props.authError}
             </div>
-            <button type="submit">Login</button>
+            <button type="submit">
+              {this.props.isAuthenticating ? 'Processing ....' : 'Login'}
+            </button>
           </form>
         </div>
       </div>

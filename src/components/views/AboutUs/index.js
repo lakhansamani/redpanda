@@ -12,6 +12,7 @@ class AboutUs extends React.Component {
     this.handleScroll = this.handleScroll.bind(this);
   }
   componentDidMount() {
+    // get subpath name from route and scroll to it
     const path = this.props.location.pathname.split('/');
     const element = document.getElementById(path['2']);
     element.scrollIntoView({ block: 'start', behavior: 'smooth' });
@@ -20,6 +21,7 @@ class AboutUs extends React.Component {
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
+  // funtion to handle scroll and route
   handleScroll(e) {
     const topScroll = document.body.scrollTop;
     const teamDiv = document.getElementById('team');
@@ -35,18 +37,17 @@ class AboutUs extends React.Component {
       browserHistory.push('/aboutus/contactus');
     }
   }
+  // function to change section
   changeSection(id) {
     const element = document.getElementById(id);
     element.scrollIntoView({ block: 'start', behavior: 'smooth' });
     document.getElementById('mobile-menu').style.width = '0%';
   }
-  getActiveClassName(sectionName) {
-    const path = this.props.location.pathname.split('/')[2];
-    return sectionName === path ? 'active' : '';
-  }
+  // function to open menu while in responsive mode
   openMenu() {
     document.getElementById('mobile-menu').style.width = '100%';
   }
+  // function to close menu while in responsive mode
   closeMenu() {
     document.getElementById('mobile-menu').style.width = '0%';
   }

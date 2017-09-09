@@ -3,6 +3,7 @@ import { pick } from 'lodash';
 import { browserHistory } from 'react-router';
 import Login from './Login';
 import loginAction from '../../../actions/loginActions';
+// pick only required props from state
 const mapStateToProps = state => pick(state.user, ['isAuthenticating', 'authError']);
 const mapDispatchToProps = dispatch => ({
   login: (authData) => {
