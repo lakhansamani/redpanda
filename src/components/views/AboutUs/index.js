@@ -3,7 +3,6 @@ import { browserHistory, Link } from 'react-router'; // eslint-disable-line
 import ContactUs from '../../partials/ContactUs'; // eslint-disable-line
 import Team from '../../partials/Team'; // eslint-disable-line
 import Profile from '../../partials/Profile'; // eslint-disable-line
-import scrollTo from '../../../lib/animatedScroll';
 import Logout from '../../partials/Logout'; //eslint-disable-line
 import menu from '../../../imgs/menu.png';
 
@@ -15,7 +14,7 @@ class AboutUs extends React.Component {
   componentDidMount() {
     const path = this.props.location.pathname.split('/');
     const element = document.getElementById(path['2']);
-    scrollTo(document.body, element.offsetTop - 80, 500);
+    element.scrollIntoView({ block: 'start', behavior: 'smooth' });
     window.addEventListener('scroll', this.handleScroll);
   }
   componentWillUnmount() {
@@ -38,7 +37,7 @@ class AboutUs extends React.Component {
   }
   changeSection(id) {
     const element = document.getElementById(id);
-    scrollTo(document.body, element.offsetTop - 80, 500);
+    element.scrollIntoView({ block: 'start', behavior: 'smooth' });
     document.getElementById('mobile-menu').style.width = '0%';
   }
   getActiveClassName(sectionName) {
@@ -61,14 +60,14 @@ class AboutUs extends React.Component {
         <div className="nav">
           <a className="mobile-menu" onClick={this.openMenu.bind(this)}><img src={menu} alt="menu"/></a>
           <ul className="menu">
-            <li className={profileActive}>
-              <a onClick={this.changeSection.bind(this, 'profile')}> Profile </a>
+            <li onClick={this.changeSection.bind(this, 'profile')} className={profileActive}>
+              <a> Profile </a>
             </li>
-            <li className={teamActive}>
-              <a onClick={this.changeSection.bind(this, 'team')}> Team </a>
+            <li onClick={this.changeSection.bind(this, 'team')} className={teamActive}>
+              <a> Team </a>
             </li>
-            <li className={contactActive}>
-              <a onClick={this.changeSection.bind(this, 'contactus')}> Contact us </a>
+            <li onClick={this.changeSection.bind(this, 'contactus')} className={contactActive}>
+              <a> Contact us </a>
             </li>
             <li>
               <Link to="/home">Home </Link>
