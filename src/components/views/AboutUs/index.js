@@ -32,7 +32,6 @@ class AboutUs extends React.Component {
     if (topScroll > teamDiv.offsetTop - 100 && topScroll < contactDiv.offsetTop - 300) {
       browserHistory.push('/aboutus/team');
     }
-    console.log(topScroll, profileDiv.scrollHeight, teamDiv.offsetTop );
     if (topScroll > (contactDiv.offsetTop - 200)) {
       browserHistory.push('/aboutus/contactus');
     }
