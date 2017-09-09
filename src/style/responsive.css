@@ -77,6 +77,9 @@
     .mobile-menu {
       display: none;
     }
+    .page-section {
+      padding-top: 13%;
+    }
   }
 
   /* Large screens ----------- */
@@ -89,6 +92,9 @@
     }
     .mobile-menu {
       display: none;
+    }
+    .page-section {
+      padding-top: 13%;
     }
   }
 
