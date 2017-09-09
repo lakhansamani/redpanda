@@ -1,5 +1,5 @@
 import React from 'react'; // eslint-disable-line
-
+import team from '../../../imgs/team.jpg'; //eslint-disable-line
 const Team = () => (
   <section className="page-section" id="team">
   <div className="section-container">

@@ -1,7 +1,8 @@
 body {
   font-family: sans-serif !important;
   font-size: 12px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 input {
   outline: none;
@@ -33,7 +34,8 @@ a, button:hover {
   color: red;
 }
 .page-section {
-  height: 90vh;
+  min-height: 90vh;
+  padding-top: 13%;
 }
 .nav {
   height: 70px;
@@ -72,7 +74,9 @@ a, button:hover {
   margin-top: 70px;
 }
 .login-wrapper {
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 1500px;
+  padding-top: 100px;
   background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(0, 0, 0, 0.6)), url('../imgs/login-bg.jpg') no-repeat center center fixed;
   background-size: cover;
   margin: 0 auto;
@@ -83,7 +87,6 @@ a, button:hover {
   display: table;
   background: rgba(255,255,255, 0.9);
   border-radius: 3px;
-  top: 25%;
   width: 25%;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
 }
@@ -116,7 +119,7 @@ a, button:hover {
   height: 100vh;
 }
 .header {
-  font-size: 2.5em;
+  font-size: 3em;
 }
 .content {
   position: relative;
@@ -176,6 +179,6 @@ a, button:hover {
   justify-content: center;
 }
 #team {
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(0, 0, 0, 0.9)), url('../imgs/home-bg.jpg') no-repeat center center fixed;
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(0, 0, 0, 0.9)), url('../imgs/team.jpg') no-repeat center center fixed;
   background-size: cover;
 }
