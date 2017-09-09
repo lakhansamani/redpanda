@@ -1,7 +1,33 @@
 body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: sans-serif !important;
   font-size: 12px;
   margin: 0px;
+}
+input {
+  outline: none;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  margin: 10px 0px;
+  width: 95%;
+}
+button {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  position: relative;
+  padding: 12px 30px;
+  margin: 10px 1px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  will-change: box-shadow,transform;
+  transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1);
+}
+a, button:hover {
+  cursor: pointer;
 }
 .error {
   color: red;
@@ -15,22 +41,141 @@ body {
   top: 0;
   background: #000;
   width: 100%;
+  z-index: 1000;
 }
 .menu {
   position: relative;
   top: 30%;
 	transform: translateY(-50%);
-  float: right;
-  margin-right: 10px;
+  width: 80%;
+  float: left;
 }
 .menu li {
   display: inline;
-  padding: 0px 10px;
+  padding: 10px;
+  margin: 0px 5px;
 }
 .menu a {
   color: #fff;
   text-decoration: none;
+  font-size: 1.3em;
+}
+.menu li:hover {
+  background: #f5593d;
+  border-radius: 3px;
+}
+.menu li.active {
+  background: #f5593d;
+  border-radius: 3px;
 }
 .about-container {
   margin-top: 70px;
+}
+.login-wrapper {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(0, 0, 0, 0.6)), url('../imgs/login-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0 auto;
+}
+.login-form-wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: table;
+  background: rgba(255,255,255, 0.9);
+  border-radius: 3px;
+  top: 25%;
+  width: 25%;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.login-form-wrapper form {
+  padding: 20px;
+}
+.login-form-wrapper button {
+  width: 100%;
+  background: #f5593d;
+  color: #fff;
+}
+.app-background {
+  background: #f5593d;
+  color: #fff;
+}
+.login-header {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 2em;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.login-header p {
+  font-size: 14px !important;
+}
+.home-wrapper {
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(0, 0, 0, 0.9)), url('../imgs/home-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.header {
+  font-size: 2.5em;
+}
+.content {
+  position: relative;
+  top: 30%;
+  padding: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+.content p {
+  font-size: 1.7em;
+  letter-spacing: 1px;
+  line-height: 2em;
+  font-weight: lighter;
+}
+.about-link {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  border-radius: 3px;
+  position: relative;
+  padding: 12px 30px;
+  margin: 10px 1px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  will-change: box-shadow,transform;
+  transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1);
+}
+.app-btn {
+  background: #f5593d;
+  color: #fff;
+}
+.logout {
+  float: right;
+  padding: 20px;
+}
+.logout img {
+  height: 25px;
+  width: 25px;
+}
+.white-text {
+  color: #fff;
+}
+.section-container {
+  top: 20%;
+  position: relative;
+  text-align: center;
+}
+.grey-text {
+  color:  #999;
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+}
+#team {
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(0, 0, 0, 0.9)), url('../imgs/home-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
