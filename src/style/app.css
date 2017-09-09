@@ -116,14 +116,18 @@ a, button:hover {
 .home-wrapper {
   background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(0, 0, 0, 0.9)), url('../imgs/home-bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+  overflow: auto;
+}
+.home-wrapper::before {
+  clear: both;
 }
 .header {
   font-size: 3em;
 }
 .content {
+  margin-top: 10%;
   position: relative;
-  top: 30%;
   padding: 20px;
   text-align: center;
   font-weight: bolder;
