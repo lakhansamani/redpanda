@@ -1,8 +1,8 @@
-import React, { Component } from 'react'; //eslint-disable-line
+import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 import emailValidation from '../../../lib/emailValidation';
 import { isLoggedIn } from '../../../lib/authLib';
-import login from '../../../imgs/login-bg.jpg'; //eslint-disable-line
+import login from '../../../imgs/login-bg.jpg'; // eslint-disable-line
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -61,7 +61,7 @@ class Login extends Component {
   }
   render() {
     return (
-      <div className="login-wrapper">
+      <div className="login-wrapper" id="login-view">
         <div className="login-form-wrapper">
           <div className="login-header">
             Login
