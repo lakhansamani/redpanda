@@ -11,67 +11,43 @@ This repo contains code for redpanda task. It uses `create-react-app` by Faceboo
     - This will open interactive mode, in order to check all test, press `a`
 
 ## Directory Structure
-|-- .editorconfig
-|-- .eslintrc.json
-|-- .gitignore
-|-- README.md
-|-- package-lock.json
-|-- package.json
-|-- public
+```
+|-- .editorconfig  //configuration for editor
+|-- .eslintrc.json // linting rules
+|-- .gitignore // files/folders to be ignored by git
+|-- README.md // Instructions
+|-- package.json // main entry file
+|-- public // public path which is served
 |   |-- favicon.ico
-|   |-- index.html
-|-- src
-    |-- index.js
-    |-- setupTests.js
-    |-- __tests__
-    |   |-- aboutus.test.js
-    |   |-- action.test.js
-    |   |-- app.test.js
-    |   |-- home.test.js
-    |   |-- index.test.js
-    |   |-- login.test.js
-    |   |-- reducer.test.js
-    |-- actions
-    |   |-- loginActions.js
-    |-- api
-    |   |-- login.js
-    |-- components
-    |   |-- App.js
-    |   |-- partials
-    |   |   |-- ContactUs
-    |   |   |   |-- index.js
-    |   |   |-- Logout
-    |   |   |   |-- index.js
-    |   |   |-- Profile
-    |   |   |   |-- index.js
-    |   |   |-- Team
-    |   |       |-- index.js
-    |   |-- views
-    |       |-- AboutUs
-    |       |   |-- index.js
-    |       |-- Home
-    |       |   |-- index.js
-    |       |-- Login
-    |       |   |-- Login.js
-    |       |   |-- index.js
-    |       |-- NotFound
-    |           |-- index.js
-    |-- db
+|   |-- index.html //page in which react is injected
+|-- src // all react and redux code
+    |-- index.js // main file which injects react app into dom
+    |-- setupTests.js // mock storage used by jest
+    |-- __tests__ // all test files
+    |   |-- aboutus.test.js // about us component rendering test
+    |   |-- action.test.js // redux actions test
+    |   |-- app.test.js // main app rendering test
+    |   |-- home.test.js // home page rendering test
+    |   |-- index.test.js // index page rendering and store test
+    |   |-- login.test.js // login component rendering test
+    |   |-- reducer.test.js // redux reducers testing
+    |-- actions // redux actions
+    |   |-- loginActions.js // actions used for login
+    |-- api // mock apis
+    |   |-- login.js // api used for login
+    |-- components // components used for rendering
+    |   |-- App.js // main app container
+    |   |-- partials // partial components used in another vies
+    |   |-- views // components used as main views
+    |-- db // mock db
     |   |-- user.js
-    |-- imgs
-    |   |-- home-bg.jpg
-    |   |-- login-bg.jpg
-    |   |-- logout.png
-    |   |-- menu.png
-    |   |-- team.jpg
-    |-- lib
-    |   |-- authLib.js
-    |   |-- emailValidation.js
-    |-- reducers
-    |   |-- index.js
-    |   |-- user.js
-    |-- stores
-    |   |-- configureStore.js
-    |-- style
-        |-- app.css
-        |-- responsive.css
+    |-- imgs // images used for background and icons
+    |-- lib // lib files
+    |   |-- authLib.js // used to check user authentication
+    |   |-- emailValidation.js // used for validating email
+    |-- reducers // redux reducers
+    |-- stores // redux store for configuring reducers and middlewares
+    |-- style // stylesheets used for app
+        |-- app.css // general and component specific css
+        |-- responsive.css // css for all media queries
+```
