@@ -1,7 +1,7 @@
-import React from 'react'; //eslint-disable-line
+import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux'; //eslint-disable-line
-import { Router, Route, IndexRoute, browserHistory, IndexRedirect } from 'react-router'; //eslint-disable-line
+import { Provider } from 'react-redux';
+import { Router, Route, IndexRoute, browserHistory, IndexRedirect } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 
 import App from './components/App';

@@ -1,9 +1,7 @@
-import React from 'react'; //eslint-disable-line
+import React from 'react';
 const App = ({ children }) => (
-  <div>
-    <div className="container">
-      {children}
-    </div>
+  <div className="container">
+    {children}
   </div>
 );
 

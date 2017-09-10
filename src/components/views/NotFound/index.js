@@ -1,5 +1,5 @@
-import React from 'react' //eslint-disable-line
-import { Link } from 'react-router'; //eslint-disable-line
+import React from 'react';
+import { Link } from 'react-router';
 const NotFound = () => (
   <div className="container">
     <h1> Not Found </h1>

@@ -1,9 +1,9 @@
-import React from 'react'; // eslint-disable-line
-import { Link } from 'react-router'; // eslint-disable-line
+import React from 'react';
+import { Link } from 'react-router';
 import homeBg from '../../../imgs/home-bg.jpg'; // eslint-disable-line
-import Logout from '../../partials/Logout'; // eslint-disable-line
+import Logout from '../../partials/Logout';
 const Home = () => (
-  <div className="home-wrapper">
+  <div className="home-wrapper" id="home">
     <Logout />
     <div className="content">
       <div className="header white-text">Your Story Starts Here.</div>

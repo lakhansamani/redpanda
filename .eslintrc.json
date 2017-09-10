@@ -12,7 +12,8 @@
   },
   "globals": {
     "window": true,
-    "document": true
+    "document": true,
+    "expect": true
   },
   "rules": {
     "comma-dangle": [2, "never"],
@@ -35,7 +36,7 @@
     "no-shadow": 0,
     "no-underscore-dangle": [0],
     "no-unused-expressions": [2, { "allowShortCircuit": true }],
-    "no-unused-vars": [2, { "vars": "all", "args": "none" }],
+    "no-unused-vars": 0,
     "space-before-function-paren": [2, "never"],
     "space-in-parens": 0,
     "padded-blocks": 0

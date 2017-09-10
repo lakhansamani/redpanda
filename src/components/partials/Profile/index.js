@@ -1,4 +1,4 @@
-import React from 'react'; // eslint-disable-line
+import React from 'react';
 
 const Profile = () => (
   <section className="page-section" id="profile">

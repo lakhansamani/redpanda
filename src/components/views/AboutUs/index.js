@@ -1,9 +1,9 @@
-import React from 'react'; // eslint-disable-line
-import { browserHistory, Link } from 'react-router'; // eslint-disable-line
-import ContactUs from '../../partials/ContactUs'; // eslint-disable-line
-import Team from '../../partials/Team'; // eslint-disable-line
-import Profile from '../../partials/Profile'; // eslint-disable-line
-import Logout from '../../partials/Logout'; //eslint-disable-line
+import React from 'react';
+import { browserHistory, Link } from 'react-router';
+import ContactUs from '../../partials/ContactUs';
+import Team from '../../partials/Team';
+import Profile from '../../partials/Profile';
+import Logout from '../../partials/Logout';
 import menu from '../../../imgs/menu.png';
 
 class AboutUs extends React.Component {
@@ -57,7 +57,7 @@ class AboutUs extends React.Component {
     const teamActive = path === 'team' ? 'active' : '';
     const contactActive = path === 'contactus' ? 'active' : '';
     return (
-      <div ref="aboutUs">
+      <div id="aboutUs" className="about-us-wrapper">
         <div className="nav">
           <a className="mobile-menu" onClick={this.openMenu.bind(this)}><img src={menu} alt="menu"/></a>
           <ul className="menu">
