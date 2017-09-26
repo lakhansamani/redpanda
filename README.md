@@ -1,5 +1,5 @@
-# Red Panda Task
-This repo contains code for redpanda task. It uses `create-react-app` by Facebook as a boilerplate, which includes `Jest` for testing.
+# RedPanda ()
+This repo contains code for Redpanda, a Single Page Application using react and redux with authentication. It uses `create-react-app` by Facebook as a boilerplate, which includes `Jest` for testing.
 
 ## How to start project
 * `git clone https://github.com/lakhansamani/redpanda.git`
