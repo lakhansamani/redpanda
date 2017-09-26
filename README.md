@@ -1,4 +1,4 @@
-# RedPanda ()
+# RedPanda
 This repo contains code for Redpanda, a Single Page Application using react and redux with authentication. It uses `create-react-app` by Facebook as a boilerplate, which includes `Jest` for testing.
 
 ## How to start project
